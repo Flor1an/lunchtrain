@@ -29,7 +29,7 @@
         $install_message = $GLOBALS['install_message'];
         $install_team_info = app_installs_get($postjson['team_id']);
 
-        if(in_array("commands", $scopes) && in_array("chat:write:user", $scopes)){
+        if(in_array("commands", $scopes) && in_array("chat:write:user", $scopes) && in_array("users:read", $scopes)){
             // The command and channel write scopes has been granted, update the install message accordingly.
             $install_message['attachments'] =  Array(
                 Array(
