@@ -37,7 +37,7 @@
 
                 $post = array(
                     'token' => $team_token,
-                    'scopes' => "commands, chat:write:user",
+                    'scopes' => "commands, chat:write, users:read",
                     'trigger_id' => $payload["trigger_id"]
                 );
 
